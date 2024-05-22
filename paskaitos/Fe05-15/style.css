@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(218, 218, 218);
+}
+.container{
+    background-color: #fff;
+    width: 55%;
+    margin: 15px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow:  1px 1px 2px #848484;
+    text-align: center;
+}
+.container a:hover{
+    text-decoration: underline;
+}
+header{
+    text-align: center;
+}
+.container .maximaImg{
+    height: 60px;
+}
+header a{
+    color: black;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.container p{
+    text-align: justify;
+    margin: 15px 50px;
+}
+.maxima-shop{
+    margin: 10px auto;
+    height: 500px;
+    object-fit: cover;
+}
+.container-product{
+    background-color: #fff;
+    width: 55%;
+    margin: 15px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow:  1px 1px 2px #848484;
+    text-align: center;
+}
+.container-product p{
+    font-weight: 600;
+    margin: 3px auto;
+}
+.price{
+    font-weight: 600;
+}
+.price .price-tag{
+    font-weight: normal;
+}
+.container-product img{
+    margin: 10px auto;
+}
+footer{
+    background-color: #fff;
+    width: 55%;
+    margin: 15px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow:  1px 1px 2px #848484;
+    text-align: center;
+}
+footer ul{
+    margin-left: 50px;
+    padding-left: 20px;
+}
+footer ul li{
+    text-align: left;
+    font-weight: 600;
+}
+footer img{
+    height: 500px;
+    margin: 10px 10px 30px 10px;
+}

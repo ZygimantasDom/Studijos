@@ -1,0 +1,76 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+.nav-wrapper{
+    float: left;
+    height: 1450px;
+    width: 20%;
+    background-color: rgb(36, 40, 44);
+    color: rgb(221, 221, 221);
+}
+.list-item a, .inner-list a{
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+}
+.site-name{
+    padding: 40px 30px;
+    border-bottom: 1px solid black;
+    margin: 0 20px;
+}
+.nav-list{
+    line-height: 30px;
+    display: block;
+    padding: 30px 30px;
+    border-bottom: 1px solid black;
+    margin: 0 20px;
+}
+.header-wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom: 1px solid rgb(152, 152, 152);
+}
+.left, .right{
+    display: flex;
+    gap: 20px;
+    padding: 20px 20px;
+}
+.right a, .left a{
+    text-decoration: none;
+}
+.right li, .left li{
+    list-style-type: none;
+}
+.video-1st{
+    display: block;
+    float: left;
+    width: 80%;
+    padding: 20px 50px;
+}
+.video-2nd{
+    display: block;
+    float: left;
+    width: 80%;
+    padding: 20px 40px;
+}
+.genre-alpha{
+    color: rgba(201, 198, 195, 2);
+}
+.genre-bald{
+    font-weight: 700;
+}
+.left > *{
+    font-weight: lighter;
+}
+.movie-name{
+    font-weight: 700;
+}
+.movie-genre{
+    font-weight: lighter;
+}
+.left-active{
+    color: rgb(135, 135, 245);
+}

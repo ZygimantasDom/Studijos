@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    height: 100%;
+    margin: 70px auto;
+    border-radius: 20px;
+}
+.content{
+    width: 90%;
+    margin: 40px auto;
+}
+.mainImg{
+    margin: 40px auto;
+    width: 100%;
+    border-radius: 20px;
+}
+.prep{
+    padding: 10px 0 10px 0;
+    border-radius: 20px;
+    width: 100%;
+    background-color: hsl(330, 100%, 98%);
+}
+.prep-time{
+    color: hsl(316, 100%, 26%);
+    margin: 30px;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    font-size: large;
+    font-weight: 600;
+}
+.main-recipe, .ingred, .instruct, .nutrit{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.ingred, .instruct, .nutrit{
+    color: hsl(14, 45%, 36%);
+}
+p, ol li, ul li, table {
+    line-height: 2rem;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    color: hsl(30, 10%, 34%);
+}
+.ingred-list li, .instruct-list li, .prep li{
+    padding-left: 15px;
+}
+.ingred-list, .instruct-list{
+    padding-left: 20px;
+}
+li::marker, td{
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+.black{
+    font-weight: 900;
+}
+.nutrition{
+    color: hsl(30, 10%, 34%);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:nth-child(-n+3){
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: hsl(30, 7%, 88%);
+}
+
+th{
+    text-align: left;
+    color: hsl(30, 10%, 34%);
+    width: 50%;
+    padding:10px 10px 10px 30px; 
+}
