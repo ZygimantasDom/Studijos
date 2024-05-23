@@ -13,6 +13,24 @@
     text-decoration: none;
     color: rgb(221, 221, 221);
 }
+.nav-list li::marker{
+    color: red;
+}
+.nav-list li.active{
+    list-style-type: disc;
+}
+.inner-list a{
+    color: rgba(221, 221, 221, 0.5);
+}
+.inner-list .active a{
+    color: rgb(221, 221, 221);
+}
+.nav-list li{
+    list-style-type: none;
+}
+.inner-list li{
+    list-style-type: circle;
+}
 .site-name{
     padding: 40px 30px;
     border-bottom: 1px solid black;
