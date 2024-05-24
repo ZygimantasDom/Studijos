@@ -76,9 +76,11 @@
 }
 .genre-alpha{
     color: rgba(201, 198, 195, 2);
+    text-transform: uppercase;
 }
 .genre-bald{
     font-weight: 700;
+    text-transform: uppercase;
 }
 .left > *{
     font-weight: lighter;
