@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Contact Us!</h1>
+      <form>
+        <fieldset>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Your name"
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email"
+          />
+          <label for="number">Reference Number:</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Reference number"
+          />
+          <label for="bio"
+            >Provide a bio:
+            <textarea
+              id="bio"
+              name="bio"
+              rows="3"
+              cols="30"
+              placeholder="About you..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" name="submit" id="submit" value="Send it!" />
+      </form>
+    </div>
+  </body>
+</html>
