@@ -1,0 +1,81 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    /* max-width: 1300px; */
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+body{
+    background-color: rgb(221, 255, 170);
+}
+.header{
+    width: 70%;
+    background-color: rgb(162, 219, 75);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-button{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-right: 30px;
+}
+.nav-button a{
+    font-size: 17px;
+    text-decoration: none;
+}
+.logo{
+    margin-left: 20px;
+}
+.container{
+    background-color:rgb(210, 240, 165) ;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+.main{
+    width: 50%;
+    padding: 0 10px 0 10px;
+}
+.aside{
+    width: 50%;
+    padding: 0 10px 0 10px;
+}
+.text1,.text2,.text3,.text4{
+    padding: 10px;
+    text-align: justify;
+}
+.we-are{
+padding: 15px;
+margin: 10px 0;
+}
+ul{
+    padding-left: 15px;
+    margin-left: 10px;
+}
+.img1{
+    float: left;
+    padding: 15px;
+}
+.btn2{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: rgb(162, 219, 75);
+    height: 40px;
+    width: 20%;
+    margin: 20px;
+}
+button:hover{
+    background-color: rgb(135, 189, 56);
+}
+footer{
+    text-align: center;
+    padding: 10px 0;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fancy Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1>Register To Fancy Form</h1>
+        <p>All fields are <span>required</span> unless marked as "optional"</p>
+        <fieldset>
+          <label for="unique-id">Your unique ID that you can't change</label>
+          <input
+            type="text"
+            name="unique-id"
+            id="unique-id"
+            placeholder="AGH23X32"
+            readonly
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="my-email"
+            id="email"
+            required
+            placeholder="Email.."
+          />
+
+          <label for="password">Password:</label>
+          <input
+            minlength="7"
+            type="password"
+            name="my-password"
+            id="password"
+            required
+            placeholder="Password.."
+          />
+
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            name="my-age"
+            id="age"
+            required
+            min="18"
+            max="65"
+            placeholder="Age:.."
+          />
+
+          <label for="bio">Tell us a little about your self (optional):</label>
+          <textarea
+            name="my-bio"
+            id="bio"
+            cols="40"
+            rows="5"
+            required
+            placeholder="Your text here.."
+          ></textarea>
+
+          <label for="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox" />I agree with
+            Terms & Conditions</label
+          >
+
+          <input type="button" name="button" id="button" value="Register" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
