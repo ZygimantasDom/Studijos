@@ -33,6 +33,7 @@ span{
     margin-top: 5px;
 }
 .container{
+    height: 445px;
     width: 67%;
     margin: 150px auto;
     display: flex;

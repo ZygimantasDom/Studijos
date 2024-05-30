@@ -1,0 +1,86 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;;
+}
+.container{
+    background-color: #d2e3f5;
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    border-radius: 15px;
+}
+body{
+    background-color: #d2e3f5;
+}
+.name{
+    display: flex;
+    align-items: center;
+}
+.person-grad{
+    display: flex;
+    flex-direction: column;
+}
+.left-container{
+    border-radius: 15px;
+    background-color: #d2e3f5;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+.right-container{
+    width: 25%;
+}
+.bald{
+    margin: 10px;
+    padding: 10px;
+    font-weight: 600;
+}
+.light{
+    margin: 10px;
+    padding: 10px;
+    font-weight: 300;
+}
+.card1,.card2,.card3,.card4,.card5{
+    border-radius: 15px;
+}
+.card1,.card2,.card4{
+    color: white;
+}
+.card1{
+    background-image: url(./bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80%;
+    width: 65%;
+    background-color: #733FC8;
+}
+.card2{
+    background-color: #49556B;
+    width: 30%;
+}
+.card3{
+    background-color: #FFFFFF;
+    width: 30%;
+}
+.card4{
+    background-color: #18202D;
+    width: 65%;
+}
+.card5{
+    background-color: #FFFFFF;
+}
+.person1{
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.person-bald{
+    font-weight: 600;
+}
+.spec-light, .light{
+    font-weight: 300;
+    color: rgb(153, 152, 152);
+}
