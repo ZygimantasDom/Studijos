@@ -1,0 +1,118 @@
+*,*::after,*::before{
+max-width: 1200px;
+box-sizing: border-box;
+margin: 0 auto;
+padding: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;;
+}
+.header{
+    box-shadow: 1px 1px 8px black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    background-color: rgb(243, 240, 237);
+}
+.soc-link{
+    color: pink;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+}
+.title{
+    color: pink;
+}
+.container-top{
+    box-shadow: 1px 1px 8px black;
+    border-radius: 10px;
+    background-color: rgb(243, 240, 237);
+    width: 50%;
+    margin: 40px auto;
+    padding-bottom: 30px;
+}
+h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.input-btn{
+    display: flex;
+    justify-content: center;
+}
+input#text{
+    padding-left: 10px;
+    border: 2px solid rgb(206, 203, 199);
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    float: left;
+    height: 30px;
+    width: 350px;
+}
+input#submit{
+    border: 2px solid rgb(98, 67, 116);
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(130, 88, 154);
+    float: left;
+    height: 30px;
+    width: 100px;
+}
+input#submit:hover{
+    background-color: rgb(120, 62, 153);
+}
+.error{
+    color: red;
+    font-size: small;
+    margin-left: 75px;
+}
+.container-mid{
+    box-shadow: 1px 1px 8px black;
+    border-radius: 10px;
+    background-color: rgb(243, 240, 237);
+    width: 50%;
+    margin: 50px auto;
+    display: flex;
+    vertical-align: middle;
+}
+.h2-mid,.h2-content{
+    font-weight: normal;
+}
+.h2-mid{
+    margin-left: 60px;
+}
+.h2-content{
+    text-decoration: line-through;
+margin-left: 30px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.fa-pen-to-square{
+    color: green;
+}
+.fa-trash{
+    color: red;
+}
+.container-bot{
+    box-shadow: 1px 1px 8px black;
+    border-radius: 10px;
+    background-color: rgb(243, 240, 237);
+    width: 50%;
+    margin: auto;
+    display: flex;
+    vertical-align: middle;
+}
+.fa-circle-check{
+    color: rgb(103, 171, 0);
+padding-right: 25px;
+}

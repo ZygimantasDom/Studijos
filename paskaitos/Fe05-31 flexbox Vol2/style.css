@@ -1,0 +1,94 @@
+*,*::after,*::before{
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    }
+    body{
+        font-family: "Roboto", sans-serif;;
+    }
+    .nav{
+        box-shadow: 1px 1px 8px black;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        background-color: rgb(243, 240, 237);
+    }
+    .soc-link{
+        color: rgb(250, 164, 178);
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        align-items: center;
+    }
+    li{
+        list-style-type: none;
+    }
+    .title{
+        color: rgb(255, 172, 186);
+    }
+    .main{
+        box-shadow: 1px 1px 8px black;
+        background-color: rgb(243, 240, 237);
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    h2{
+        padding: 30px 0;
+    }
+    label{
+        font-weight: 600;
+        margin: 0;
+        padding: 10px 20px;
+    }
+    input#text{
+        border: none;
+        margin-left: 150px;
+    }
+    input#name{
+        background-color: rgb(243, 240, 237);
+        padding-left: 10px;
+        border-radius: 5px;
+        margin-left: 160px;
+        height: 30px;
+        width: 320px;
+    }
+    input#checkbox{
+        margin-left: 200px;
+    }
+    input#btn{
+        background-color: rgb(255, 172, 186);
+        border: 1px solid rgb(255, 172, 186);
+        border-radius: 5px;
+        margin-top: 25px;
+        width: 500px;
+        height: 25px;
+        margin: 15px auto;
+        margin-bottom: 0;
+    }
+    input#btn:hover{
+        background-color: rgb(249, 114, 136);
+    }
+    .main span{
+        color: red;
+        padding: 15px;
+        font-size: 10px;
+    }
+    .back-btn{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 100px;
+        background-color: rgb(192, 186, 186);
+        width: 20%;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .back-btn:hover{
+        background-color: rgb(64, 61, 61);
+        color: white;
+    }
