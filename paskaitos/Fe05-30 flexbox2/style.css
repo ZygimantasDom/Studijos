@@ -33,6 +33,7 @@ body{
 }
 .right-container{
     width: 25%;
+    display: flex;
 }
 .bald{
     margin: 10px;
@@ -71,7 +72,6 @@ body{
 }
 .card5{
     background-color: #FFFFFF;
-    padding-bottom: 15px;
 }
 .person1{
     width: 50px;
