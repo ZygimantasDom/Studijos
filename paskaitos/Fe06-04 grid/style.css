@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  width: auto;
+}
+.container {
+  height: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.first {
+  background-color: red;
+  grid-column: span 2;
+  grid-row: span 4;
+}
+.second {
+  background-color: red;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.third {
+  background-color: red;
+  grid-row: span 2;
+}
+.fourth {
+  background-color: red;
+  grid-row: span 2;
+}
+
+.container-flex {
+  display: flex;
+  gap: 15px;
+}
+
+.box1 {
+  width: 704.5px;
+  height: 400px;
+  background-color: green;
+}
+.one {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.two {
+  display: flex;
+  gap: 15px;
+}
+.box2 {
+  background-color: green;
+  width: 704.5px;
+  height: 192.5px;
+}
+.box3 {
+  background-color: green;
+  width: 344.75px;
+  height: 192.5px;
+}
+.box4 {
+  background-color: green;
+  width: 344.75px;
+  height: 192.5px;
+}
