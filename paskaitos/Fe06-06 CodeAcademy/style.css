@@ -1,0 +1,163 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f2f2f2;
+  max-width: 1300px;
+  margin: auto;
+}
+.wrapper-nav {
+  padding: 15px 25px;
+  margin: 0 auto;
+}
+.wrapper-main {
+  display: flex;
+  padding: 15px 25px;
+  margin: 0 auto;
+}
+header {
+  background-color: white;
+  box-shadow: 0px 5px 33px 3px rgba(0, 0, 0, 0.22);
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-links {
+  font-size: 15px;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  gap: 25px;
+}
+.header-list li {
+  list-style-type: none;
+}
+.header-btn {
+  border: none;
+  background-color: blue;
+  color: white;
+  min-height: 40px;
+  min-width: 150px;
+  border-radius: 30px;
+}
+h1 {
+  width: 50%;
+  padding-left: 20px;
+}
+.article1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.card1 {
+  width: 400px;
+  display: block;
+  padding: 20px 0 20px 20px;
+}
+.card2 {
+  display: flex;
+  width: 400px;
+  padding: 20px 0 20px 20px;
+}
+.news-img {
+  height: 200px;
+  width: 380px;
+  object-fit: cover;
+}
+.news-img2 {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.news {
+  width: 70%;
+}
+h4 {
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.card-date {
+  font-size: 13px;
+}
+.inner-card {
+  padding-left: 15px;
+  background-color: white;
+}
+.news-wrapper {
+  width: 100%;
+}
+.radio {
+  width: 30%;
+}
+
+.h2-right-side {
+  font-size: 42px;
+  padding-left: 15px;
+}
+.radio-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-right: 5px solid black;
+}
+.Radio-timer {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  background-color: black;
+}
+.timer-color {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+}
+.play-btn {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.play-btn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-left: 15px solid black;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.radio-wrapper {
+  padding: 15px;
+}
+.radio-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  padding: 10px;
+}
+.card-date-radio {
+  margin-top: 10px;
+  font-size: 13px;
+}
+.radio-info {
+  background-color: white;
+}

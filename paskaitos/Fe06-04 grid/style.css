@@ -4,6 +4,9 @@
   box-sizing: border-box;
   width: auto;
 }
+.container-main {
+  min-width: 300px;
+}
 .container {
   height: 400px;
   width: 100%;
@@ -39,8 +42,8 @@
 }
 
 .box1 {
-  width: 704.5px;
-  height: 400px;
+  width: 744.5px;
+  min-height: 400px;
   background-color: green;
 }
 .one {
@@ -54,16 +57,16 @@
 }
 .box2 {
   background-color: green;
-  width: 704.5px;
+  width: 744.5px;
   height: 192.5px;
 }
 .box3 {
   background-color: green;
-  width: 344.75px;
+  width: 364.75px;
   height: 192.5px;
 }
 .box4 {
   background-color: green;
-  width: 344.75px;
+  width: 364.75px;
   height: 192.5px;
 }
