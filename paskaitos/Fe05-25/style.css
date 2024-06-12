@@ -1,116 +1,123 @@
-*, *::before, *::after{
-    box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
-    color: antiquewhite;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  color: antiquewhite;
 }
-body{
-    background-color: rgb(3, 57, 84);
+body {
+  background-color: rgb(3, 57, 84);
 }
-.header{
-    border-radius: 5px;
-    padding: 10px 0;
-    margin: 5px auto;
-    width: 98%;
-    background-color: rgb(4, 65, 95);
+.header {
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 5px auto;
+  width: 98%;
+  background-color: rgb(4, 65, 95);
 }
-li a{
-text-decoration: none;
-position: relative;
+li a {
+  text-decoration: none;
+  position: relative;
 }
-li a:hover{
-    color: firebrick;
+li a:hover {
+  color: firebrick;
 }
-li a::before{
-    content: ' ';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 0%;
-    height: 1px;
-    background-color: firebrick;
-    transition: all .5s;
+li a::before {
+  content: " ";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: firebrick;
+  transition: all 0.5s;
 }
-li a:hover::before{
-    width: 100%;
+li a:hover::before {
+  width: 100%;
 }
-.header ul{
-    margin: 15px;
-    text-transform: uppercase;
-    font-size: 18px;
-    padding: 10px 20px;
-    display: flex;
-    gap: 50px
+.header ul {
+  margin: 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: flex;
+  gap: 50px;
 }
-.header-nav li{
-    list-style-type: none;
+.header-nav li {
+  list-style-type: none;
 }
-.league-header{
-    display: flex;
-    background-color: rgb(4, 65, 95);
-    align-items: center;
-    border-radius: 5px;
-    margin: 10px auto;
-    width: 98%;
+.league-header {
+  display: flex;
+  background-color: rgb(4, 65, 95);
+  align-items: center;
+  border-radius: 5px;
+  margin: 10px auto;
+  width: 98%;
 }
-.board{
-    text-decoration: none;
-    margin-left: 1100px;
+.board {
+  text-decoration: none;
+  margin-left: 1100px;
 }
-.league-header img.star, .league-header img.uk-flag{
-    margin: 10px;
+.league-header img.star,
+.league-header img.uk-flag {
+  margin: 10px;
 }
-.uk-lyga{
-    color: rgb(255, 255, 80);
-    font-size: 20px;
-    margin: 20px 0;
+.uk-lyga {
+  color: rgb(255, 255, 80);
+  font-size: 20px;
+  margin: 20px 0;
 }
-.board{
-    display: flex;
-    justify-content: end;
+.board {
+  display: flex;
+  justify-content: end;
 }
-.stages, h2{
-    border-radius: 5px;
-    margin: 5px auto;
-    width: 98%;
-    background-color: rgb(4, 65, 95);
-    font-weight: normal;
-    font-size: 17px;
-    padding: 1px 0;
+.stages,
+h2 {
+  border-radius: 5px;
+  margin: 5px auto;
+  width: 98%;
+  background-color: rgb(4, 65, 95);
+  font-weight: normal;
+  font-size: 17px;
+  padding: 1px 0;
 }
-table{
-    border-collapse: collapse;
-    line-height: 25px;
-    margin: 10px auto;
-    width: 98%;
+table {
+  border-collapse: collapse;
+  line-height: 25px;
+  margin: 10px auto;
+  width: 98%;
 }
-.rows{
-    padding: 10px;
-    border-bottom: 1px solid rgb(30, 98, 132);
-    width: 10px;
+.rows {
+  padding: 10px;
+  border-bottom: 1px solid rgb(30, 98, 132);
+  width: 10px;
 }
-.rows:last-of-type{
-    border-bottom: none;
+.rows:last-of-type {
+  border-bottom: none;
 }
-.table-img, .table-date, .table-time{
-    padding: 0 5px;
-    width: 35px;
+.table-img,
+.table-date,
+.table-time {
+  padding: 0 5px;
+  width: 35px;
 }
-.club-logo{
-    width: 25px;
-    height: 25px;
+.club-logo {
+  width: 25px;
+  height: 25px;
 }
-.club-img{
-    width: 50%;
-    padding: 3px 25px;
+.club-img {
+  width: 50%;
+  padding: 3px 25px;
 }
-.club-img span{
-    padding-left: 15px;
+.club-img span {
+  padding-left: 15px;
 }
-.score, .score2{
-    width: 65px;
+.score,
+.score2 {
+  width: 65px;
 }
-.box{
-    margin-left: 35px;
-    padding: 25px 0;
-    border-left: 1px solid rgb(30, 98, 132);
+.box {
+  margin-left: 35px;
+  padding: 25px 0;
+  border-left: 1px solid rgb(30, 98, 132);
 }
