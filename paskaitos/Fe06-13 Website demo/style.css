@@ -75,6 +75,7 @@ body {
   border: none;
   box-shadow: 1px 1px 2px rgb(81, 48, 79);
   color: whitesmoke;
+  transition-duration: 0.3s;
 }
 .main-explore-btn:hover {
   color: rgb(182, 152, 210);
@@ -409,5 +410,8 @@ label {
   }
   #email {
     width: 300px;
+  }
+  .gallery-footer-updates {
+    text-align: left;
   }
 }
