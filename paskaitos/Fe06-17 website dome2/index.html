@@ -13,8 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
     <title>Huddle</title>
@@ -37,7 +44,7 @@
             but so does your audience. Create connections with your users as you
             engage in genuine discussion.
           </p>
-          <button class="header-main-btn">Get Started For Free</button>
+          <button class="main-btn">Get Started For Free</button>
           <img
             class="header-main-img"
             src="./images/screen-mockups.svg"
@@ -46,8 +53,105 @@
         </div>
       </header>
       <main>
-        <div class="main-wrapper"></div>
+        <div class="main-wrapper">
+          <div class="first-card">
+            <div class="card">
+              <img
+                src="./images/icon-communities.svg"
+                alt=""
+                class="card-icon"
+              />
+              <span class="card-numbers">1.4k+</span>
+              <h4 class="card-info">Communities Formed</h4>
+            </div>
+            <div class="card">
+              <img src="./images/icon-messages.svg" alt="" class="card-icon" />
+              <span class="card-numbers">2.7m+</span>
+              <h4 class="card-info">
+                Message <br />
+                Sent
+              </h4>
+            </div>
+          </div>
+          <div class="second-card">
+            <img src="./images/illustration-grow-together.svg" alt="" />
+            <h3 class="second-card-about">Grow Together</h3>
+            <p class="second-card-text">
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
+          <div class="second-card">
+            <img src="./images/illustration-flowing-conversation.svg" alt="" />
+            <h3 class="second-card-about">Flowing Conversations</h3>
+            <p class="second-card-text">
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
+          <div class="second-card">
+            <img src="./images/illustration-your-users.svg" alt="" />
+            <h3 class="second-card-about">Your Users</h3>
+            <p class="second-card-text">
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
+          <div class="main-bottom-section">
+            <h1 class="main-bottom-section-header">
+              Ready to build your community?
+            </h1>
+            <button class="main-btn">Get Started For Free</button>
+          </div>
+        </div>
       </main>
+      <footer>
+        <div class="footer-main-wrapper">
+          <div class="footer-wrapper">
+            <div class="about">
+              <h2 class="footer-about">newsletter</h2>
+              <p class="footer-text">
+                To recieve tips on how to grow your community, sign up to our
+                weekly newsletter. We’ll never send you spam or pass on your
+                email address
+              </p>
+            </div>
+            <div class="about-email">
+              <label for="email">
+                <input type="email" name="email" id="email" />
+              </label>
+              <button class="label-btn">Subscrbe</button>
+            </div>
+          </div>
+          <div class="footer-wrapper-bottom">
+            <div class="footer-wrapper-img-text">
+              <img src="./images/logo white.svg" alt="" class="footer-img" />
+              <p class="footer-wrapper-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                maxime quibusdam ut ea nulla quo.
+              </p>
+            </div>
+            <div class="footer-wrapper-phone-email">
+              <div class="footer-wrapper-phone">
+                <img src="./images/icon-phone.svg" alt="phone" class="phone" />
+                <h5 class="number-email">Phone: +1-543-123-4567</h5>
+              </div>
+              <div class="footer-wrapper-email">
+                <img src="./images/icon-email.svg" alt="email" class="email" />
+                <h5 class="number-email">example@company.com</h5>
+              </div>
+              <div class="footer-logos">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

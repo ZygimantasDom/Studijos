@@ -27,8 +27,8 @@
     <title>Hiking</title>
   </head>
   <body>
-    <div class="container">
-      <header>
+    <header>
+      <div class="container">
         <div class="nav-wrapper">
           <div class="nav-title">
             <h3 class="title">
@@ -48,18 +48,20 @@
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
-        <div class="title-wrapper">
-          <div class="inner-title-wrapper">
-            <h1 class="main-title">continue exploring</h1>
-            <p class="main-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              quos.
-            </p>
-            <button class="main-explore-btn">Explore Tours</button>
-          </div>
+      </div>
+      <div class="title-wrapper">
+        <div class="inner-title-wrapper">
+          <h1 class="main-title">continue exploring</h1>
+          <p class="main-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            quos.
+          </p>
+          <button class="main-explore-btn">Explore Tours</button>
         </div>
-      </header>
-      <main>
+      </div>
+    </header>
+    <main>
+      <div class="container">
         <div class="about-wrapper">
           <h2 class="wrapper-title-all">
             about <span class="purple-title">us</span>
@@ -86,6 +88,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="services-wrapper">
           <h2 class="wrapper-title-all">
             our <span class="purple-title">services</span>
@@ -117,6 +121,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="featured-wrapper">
           <h2 class="wrapper-title-all">
             featured <span class="purple-title">tours</span>
@@ -216,38 +222,58 @@
           </div>
           <a href="#" class="all-tours">All Tours</a>
         </div>
-        <div class="main-gallery-wrapper">
-          <h2 class="wrapper-title-all">
-            Our <span class="purple-title">Gallery</span>
-          </h2>
-          <div class="main-gallery">
-            <img class="gallery-img" src="./images/tibet.jpg" alt="mountains" />
-            <img class="gallery-img" src="./images/java.jpg" alt="mountains" />
-            <img class="gallery-img" src="./images/hong kong.jpg" alt="China" />
-            <img class="gallery-img" src="./images/kenya.jpg" alt="kenya" />
-          </div>
-          <div class="gallery-footer">
-            <div class="gallery-footer-updates">
-              <h2 class="wrapper-title-all">
-                want latest tour info and updates?
-              </h2>
-              <h4>Sign up for newsletter and stay up to date</h4>
+      </div>
+      <div class="container">
+        <h2 class="wrapper-title-all">
+          Our <span class="purple-title">Gallery</span>
+        </h2>
+      </div>
+      <section>
+        <div class="container">
+          <div class="main-gallery-wrapper">
+            <div class="main-gallery">
+              <img
+                class="gallery-img"
+                src="./images/tibet.jpg"
+                alt="mountains"
+              />
+              <img
+                class="gallery-img"
+                src="./images/java.jpg"
+                alt="mountains"
+              />
+              <img
+                class="gallery-img"
+                src="./images/hong kong.jpg"
+                alt="China"
+              />
+              <img class="gallery-img" src="./images/kenya.jpg" alt="kenya" />
             </div>
-            <div class="gallery-footer-email">
-              <label for="input">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your email"
-                />
-                <input type="submit" name="submit" id="submit" />
-              </label>
+            <div class="gallery-footer">
+              <div class="gallery-footer-updates">
+                <h2 class="wrapper-title-all">
+                  want latest tour info and updates?
+                </h2>
+                <h4>Sign up for newsletter and stay up to date</h4>
+              </div>
+              <div class="gallery-footer-email">
+                <label for="input">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Your email"
+                  />
+                  <input type="submit" name="submit" id="submit" />
+                </label>
+              </div>
             </div>
           </div>
         </div>
-      </main>
-      <footer>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
         <div class="footer-wrapper">
           <ul class="footer-link-list">
             <li><a href="#">Home</a></li>
@@ -271,7 +297,7 @@
             Copyright @ Hiking Tours 2025. All Rights Reserved.
           </span>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
