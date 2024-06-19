@@ -10,7 +10,13 @@ body {
   font-family: "Open Sans", sans-serif;
   color: hsl(190, 71%, 16%);
 }
+
+.container {
+  max-width: 1440px;
+}
+
 /* header top */
+
 header {
   font-family: "Poppins", sans-serif;
 }
@@ -18,12 +24,13 @@ header {
 .header-top-wrapper {
   display: flex;
   align-items: center;
-  margin: 30px;
-  width: 90%;
+  margin: 30px 30px;
 }
+
 .header-top-img {
   width: 50%;
 }
+
 .header-top-btn {
   border: 2px solid hsl(321, 100%, 78%);
   color: hsl(321, 100%, 78%);
@@ -42,18 +49,20 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px auto;
-  width: 80%;
+  margin: 100px 30px;
 }
+
 .header-main-about {
   text-align: center;
   font-size: 25px;
 }
+
 .header-main-about-text {
   text-align: center;
   font-size: 15px;
   font-weight: 500;
 }
+
 .main-btn {
   margin: 40px auto;
   min-width: 30%;
@@ -66,6 +75,7 @@ header {
   border: none;
   color: white;
 }
+
 .header-main-img {
   width: 100%;
   margin-top: 30px;
@@ -74,9 +84,9 @@ header {
 /* main wrapper */
 
 .main-wrapper {
-  width: 80%;
-  margin-bottom: 50px;
+  margin: 50px 30px;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -90,20 +100,24 @@ header {
   margin: 0;
   width: 40px;
 }
+
 .card-numbers {
   margin: 0;
   font-size: 60px;
   font-weight: 700;
 }
+
 .card-info {
   margin: 0;
   font-weight: 400;
 }
+
 .main-wrapper:last-child .card-info {
   display: flex;
   justify-content: center;
   text-align: center;
 }
+
 .second-card {
   display: flex;
   flex-direction: column;
@@ -112,67 +126,79 @@ header {
 }
 
 .second-card img {
-  width: 100%;
   padding-bottom: 30px;
-  margin-top: 100px;
+  margin: 100px 0;
 }
+
 .second-card-about {
   font-weight: 900;
 }
+
 .second-card-text {
   text-align: center;
   font-weight: 600;
   font-size: 13px;
 }
+
 .main-bottom-section {
   justify-content: flex;
   flex-direction: column;
   text-align: center;
 }
+
 .main-bottom-section-header {
   font-size: 25px;
   margin-bottom: 0;
 }
 
 /* footer */
+
 footer {
+  padding-bottom: 30px;
   margin-top: 50px;
-  padding-bottom: 50px;
   color: white;
   background-color: hsl(192, 100%, 9%);
 }
+
 .footer-main-wrapper {
-  width: 80%;
+  margin: 30px 30px;
 }
+
 .footer-wrapper {
   margin-bottom: 50px;
 }
+
 .footer-about {
   text-transform: uppercase;
   font-size: 22px;
 }
+
 .footer-text {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
 }
+
 .about-email {
   display: flex;
   flex-direction: column;
   align-items: end;
   padding: 30px 0;
 }
+
 label {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 15px;
 }
+
 #email {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid black;
 }
+
 .label-btn {
   padding: 12px 17px;
   border-radius: 5px;
@@ -182,33 +208,40 @@ label {
   color: white;
   font-weight: 600;
 }
+
 .footer-img {
   fill: white;
   width: 60%;
 }
+
 .footer-wrapper-text {
   line-height: 22px;
   font-size: 14px;
   font-weight: 400;
 }
+
 .footer-wrapper-phone,
 .footer-wrapper-email {
   display: flex;
   margin-bottom: 15px;
 }
+
 .number-email {
   margin: 0;
 }
+
 .phone,
 .email {
   margin: 0;
   padding-right: 30px;
 }
+
 .footer-logos {
   display: inline-flex;
   gap: 15px;
   padding-top: 20px;
 }
+
 i {
   font-size: 25px;
 }
