@@ -94,6 +94,8 @@ header {
   row-gap: 10px;
   margin: 30px auto;
   padding-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-icon {
@@ -123,6 +125,10 @@ header {
   flex-direction: column;
   width: 100%;
   margin-bottom: 100px;
+}
+
+.second-card-inner-wrapp {
+  text-align: center;
 }
 
 .second-card img {
@@ -244,4 +250,21 @@ label {
 
 i {
   font-size: 25px;
+}
+
+@media all and (min-width: 899px) {
+  .first-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-numbers {
+    font-size: 80px;
+  }
+  .card-info {
+    font-size: 26px;
+  }
+
+  .second-card {
+    display: flex;
+  }
 }
