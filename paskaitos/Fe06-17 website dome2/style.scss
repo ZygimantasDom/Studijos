@@ -1,3 +1,5 @@
+
+
 *,
 *::after,
 *::before {
@@ -6,14 +8,98 @@
   margin-right: auto;
 }
 
-.container {
-  max-width: 1440px;
+.container{
+    max-width: 1440px;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   color: hsl(190, 71%, 16%);
 }
+
+// header
+
+.header-top-wrapper{
+    .header-top-logo{
+        .header-top-img{
+
+        }
+    }
+    .header-top-btn{
+
+    }
+}
+.header-main-wrapper{
+    .header-main-about{
+
+    }
+    .header-main-about-text{
+
+    }
+    .main-btn{
+
+    }
+    .header-main-img{
+
+    }
+}
+
+.main-wrapper{
+    .first-card{
+        .card{
+
+            img.card-icon{
+
+            }
+            span.card-numbers{
+
+            }
+            h4.card-info{
+
+            }
+        }
+        .card{
+            img.card-icon{
+
+            }
+            span.card-numbers{
+
+            }
+            h4.card-info{
+
+            }
+        }
+    }
+    .second-card{
+
+    }
+    .second-card{
+
+    }
+    .second-card{
+
+    }
+    .main-bottom-section{
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* header top */
 header {
@@ -327,4 +413,4 @@ i {
   input#email {
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
