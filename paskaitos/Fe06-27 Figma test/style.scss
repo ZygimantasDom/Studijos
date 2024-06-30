@@ -21,13 +21,13 @@
 }
 
 @mixin responsive-md{
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 860px) {
         @content;
     }
 }
 
 @mixin responsive-sm{
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 740px) {
         @content;
     }
 }
@@ -60,7 +60,7 @@ body{
     align-self: flex-start;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 3.125rem;
     border: 1px solid #0E70AF;
     padding: 0.625em 1.875em;
     width: 350px;
@@ -69,6 +69,10 @@ body{
     color: #FEFEFE;
     border-radius: 2px;
     
+    @include responsive-xl{
+        min-height: 65px;
+        width: 280px;
+    }
 }
 
 .all-items-header{

@@ -7,7 +7,7 @@
 }
 
 @mixin responsive-xl{
-    @media screen and (max-width: 1120px) {
+    @media screen and (max-width: 1099px) {
         @content;
     }
 }
@@ -19,13 +19,13 @@
 }
 
 @mixin responsive-md{
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 860px) {
         @content;
     }
 }
 
 @mixin responsive-sm{
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 740px) {
         @content;
     }
 }
@@ -35,7 +35,7 @@ main{
         position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-block: 3.125em;
+        padding: 3.125em 0;
         
         @include responsive-lg{
             display: grid;
@@ -48,13 +48,14 @@ main{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin-inline: auto;
+                margin:0 auto;
 
                 .green-btn{
                     align-self: center;
                 }
                 p.main-item-text{
-                    margin-inline: 6.25em;
+                    margin: 0 6.25em;
+                    padding-bottom: 1em;
                     text-align: center;
                 }
                 .svg{
@@ -77,11 +78,11 @@ main{
         .main-content-item-right{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 10px;
+            gap: 0.625em;
 
             @include responsive-lg{
                     padding-top: 50px;
-                    margin-inline: 50px;
+                    margin: 0 50px;
             }
 
             .right-item-card{
@@ -116,6 +117,10 @@ main{
     }
     .main-content-mid-wrapper{
 
+        @include responsive-lg{
+            margin: 0 50px;
+        }
+
         .main-content-mid-wrapper-top{
 
             display: flex;
@@ -129,20 +134,22 @@ main{
             padding-bottom: 170px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 40px;
+            gap: 2.5em;
             position: relative;
 
-
-
+            @include responsive-lg{
+                display: flex;
+                flex-direction: column;
+            }
             .dotts-svg{
                 z-index: -1;
                 position: absolute;
                 top: 180px;
                 left: -30px;
-
-
+                    @include responsive-lg{
+                        display: none;
+                    }
             }
-
 
             .main-content-mid-card{
                 background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
@@ -150,7 +157,6 @@ main{
                 padding: 78px 45px 72px;
                 border-radius: 8px;
                 box-shadow: 1px 1px 5px #d4d3d3;
-                position: relative;
                 
                 .main-content-mid-logo{
                     padding-bottom: 5.5px;
@@ -172,45 +178,48 @@ main{
             .rectangle-right{
                 position: absolute;
                 z-index: -1;
-                right: -100px;
+                right: -70px;
                 top: 210px;
+                    @include responsive-lg{
+                        display: none;
+                    }
             }
         }
         .main-content-mid-wrapper-bottom{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            padding-bottom: 137px;
+            padding-bottom: 80px;
             position: relative;
 
-            @include responsive-lg{
+            @include responsive-xl{
                 display: flex;
                 flex-direction: column;
+                
+                .bot-img-wrapper{
+                    .main-content-bot-img{
+                        display: block;
+                        max-width: 100%;
+                        margin:0 auto;
+                        -webkit-box-shadow: 10px 10px 5px 0px rgba(219,219,219,1);
+                        -moz-box-shadow: 10px 10px 5px 0px rgba(219,219,219,1);
+                        box-shadow: 10px 10px 5px 0px rgba(219,219,219,1);
+                    }
 
-                .main-content-bot-img{
-                    position: relative;
-                    display: block;
-                    max-width: 100%;
-                    margin-inline: 50px;
-                }
+                    .bot-img-shadow{
+                        display: none;
+                    }
 
-                .content-item-all{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .green-btn{
-                    align-self: center;
-                }
-                .bot-img-shadow{
-                    position: absolute;
-                    top: 10px;
-                    left: 10px;
-                    z-index: -1;
+                    .content-item-all{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .green-btn{
+                        align-self: center;
+                    }
                 }
             }
-
-
             .main-content-bot-img{
                 display: block;
             }
@@ -246,7 +255,9 @@ main{
             }
 
             .main-content-bot-arrow{
-                
+                @include responsive-xl{
+                    display: none;
+                }
                     img.arrow-svg-left, .arrow-svg-right {
 
                         padding: 15px;
@@ -261,9 +272,16 @@ main{
         .main-content-wrapper{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 40px;
+            gap: 2.5em;
             overflow: visible;
             padding-bottom: 170px;
+
+            @include responsive-xl{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+            }
 
             .main-content-carousel-card{
                 background: rgb(236,236,236);
@@ -285,18 +303,28 @@ main{
                             line-height: 18.56px;
                             color: #333333;
                             margin: 0;
+
+                            @include responsive-xl{
+                                font-size: 1.7rem;
+                            }
                         }
                         h6{
-                            margin-block: 10px;
-                            font-size: 0.813rem;
+                            margin: 10px 0;
+                            font-size: 1rem;
                             font-weight: 400;
                             line-height: 17.16px;
                             color: #4F4F4F;
+                            @include responsive-xl{
+                                font-size: 1rem;
+                            }
                         }
                     }
                 }
                 .card-text{
                     font-style: italic;
+                    @include responsive-xl{
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
