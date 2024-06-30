@@ -68,12 +68,13 @@ header .header-content-wrapper .header-item-left .header-content-name {
 @media screen and (max-width: 1099px) {
   header .header-content-wrapper .header-item-left .header-content-name {
     font-size: 2.375rem;
+    line-height: 40.85px;
   }
 }
 @media screen and (max-width: 740px) {
   header .header-content-wrapper .header-item-left .header-content-name {
-    font-size: 1.5rem;
-    line-height: 27.85px;
+    font-size: 1.9rem;
+    line-height: 35.85px;
   }
 }
 header .header-content-wrapper .header-item-left .header-content-text {
@@ -90,8 +91,8 @@ header .header-content-wrapper .header-item-left .header-content-text {
 }
 @media screen and (max-width: 740px) {
   header .header-content-wrapper .header-item-left .header-content-text {
-    font-size: 0.7rem;
-    line-height: 13.2px;
+    font-size: 0.9rem;
+    line-height: 20.2px;
   }
 }
 header .header-content-wrapper .header-item-right {
@@ -289,6 +290,11 @@ main .main-content-mid-wrapper .main-content-mid-wrapper-bottom .bot-img-shadow 
 main .main-content-mid-wrapper .main-content-mid-wrapper-bottom .content-item-all {
   padding: 105px 50px 105px 105px;
 }
+@media screen and (max-width: 860px) {
+  main .main-content-mid-wrapper .main-content-mid-wrapper-bottom .content-item-all {
+    padding: 40px 10px;
+  }
+}
 main .main-content-mid-wrapper .main-content-mid-wrapper-bottom .content-item-all .main-item-text {
   font-size: 1rem;
   font-weight: 400;
@@ -338,8 +344,18 @@ main .main-content-carousel-wrapper .main-content-wrapper .main-content-carousel
 main .main-content-carousel-wrapper .main-content-wrapper .main-content-carousel-card .card-image-name {
   display: flex;
 }
+@media screen and (max-width: 599px) {
+  main .main-content-carousel-wrapper .main-content-wrapper .main-content-carousel-card .card-image-name {
+    display: block;
+  }
+}
 main .main-content-carousel-wrapper .main-content-wrapper .main-content-carousel-card .card-image-name .card-img {
   max-width: 100%;
+}
+@media screen and (max-width: 599px) {
+  main .main-content-carousel-wrapper .main-content-wrapper .main-content-carousel-card .card-image-name .card-img {
+    padding-bottom: 10px;
+  }
 }
 main .main-content-carousel-wrapper .main-content-wrapper .main-content-carousel-card .card-image-name .card-content h5 {
   font-size: 1rem;
@@ -484,17 +500,12 @@ body {
   background: linear-gradient(180deg, rgb(249, 236, 229) 49%, rgb(255, 255, 255) 100%);
 }
 
-.container {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .inner-container {
   max-width: 1340px;
   margin-left: auto;
   margin-right: auto;
-  padding: 50px;
+  padding: 20px;
+  overflow: hidden;
 }
 
 .green-btn {
@@ -506,7 +517,7 @@ body {
   gap: 3.125rem;
   border: 1px solid #0E70AF;
   padding: 0.625em 1.875em;
-  width: 350px;
+  width: 70%;
   min-height: 73px;
   background: linear-gradient(#647b64, #66ac66);
   color: #FEFEFE;
@@ -527,6 +538,11 @@ body {
   font-weight: 500;
   margin: 17px 0 40px 0;
 }
+@media screen and (max-width: 740px) {
+  .all-items-header {
+    font-size: 2rem;
+  }
+}
 
 .all-items-yellow-text {
   font-size: 1.5rem;
@@ -535,4 +551,9 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   margin: 0;
+}
+@media screen and (max-width: 740px) {
+  .all-items-yellow-text {
+    font-size: 1.125rem;
+  }
 }/*# sourceMappingURL=style.css.map */

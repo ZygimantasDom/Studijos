@@ -29,6 +29,11 @@
         @content;
     }
 }
+@mixin responsive-xsm{
+    @media screen and (max-width: 599px) {
+        @content;
+    }
+}
 
 main{
     .main-content-top-wrapper{
@@ -231,7 +236,9 @@ main{
             }
             .content-item-all{
                 padding: 105px 50px 105px 105px;
-
+                @include responsive-md{
+                    padding: 40px 10px;
+                }
                 .main-item-text{
                     font-size: 1rem;
                     font-weight: 400;
@@ -292,11 +299,16 @@ main{
 
                 .card-image-name{
                     display: flex;
+                    @include responsive-xsm{
+                        display: block;
+                    }
                     .card-img{
                         max-width: 100%;
+                        @include responsive-xsm{
+                            padding-bottom: 10px;
+                        }
                     }
                     .card-content{
-
                         h5{
                             font-size: 1rem;
                             font-weight: 500;
