@@ -95,6 +95,10 @@ header .header-content-wrapper .header-item-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: url(./svg/Ellipse\ 116.svg);
+  background-repeat: no-repeat;
+  background-position-x: 150px;
+  background-position-y: 100px;
 }
 header .header-content-wrapper .header-item-left .header-content-name {
   font-weight: 500;
@@ -116,6 +120,9 @@ header .header-content-wrapper .header-item-right {
 }
 header .header-content-wrapper .header-item-right .header-image {
   max-width: 100%;
+  background-image: url(./svg/Ellipse\ 118.svg);
+  background-repeat: no-repeat;
+  background-position-y: 100px;
 }
 
 main .main-content-top-wrapper {
@@ -298,6 +305,7 @@ footer .footer-wrapper .footer-links .footer-logo-svgs {
   padding-block: 15px;
 }
 footer .footer-wrapper .footer-link-list .footer-list-header {
+  margin-block: 20px;
   font-size: 20px;
   color: #647B64;
   font-weight: 500;
@@ -325,19 +333,4 @@ footer .footer-wrapper .footer-msg textarea {
   height: 113px;
   margin-bottom: 30px;
   padding: 15px;
-}
-footer .footer-wrapper .footer-msg .green-btn {
-  text-transform: uppercase;
-  display: flex;
-  align-self: flex-start;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-  border: 1px solid #0E70AF;
-  padding: 10px 30px;
-  width: 350px;
-  height: 73px;
-  background: linear-gradient(#647b64, #66ac66);
-  color: #FEFEFE;
-  border-radius: 2px;
 }/*# sourceMappingURL=style.css.map */
