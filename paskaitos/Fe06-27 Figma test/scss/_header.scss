@@ -1,0 +1,131 @@
+
+
+@mixin responsive-xxl{
+    @media screen and (max-width: 1239px) {
+        @content;
+    }
+}
+
+@mixin responsive-xl{
+    @media screen and (max-width: 1099px) {
+        @content;
+    }
+}
+
+@mixin responsive-lg{
+    @media screen and (max-width: 990px) {
+        @content;
+    }
+}
+
+@mixin responsive-md{
+    @media screen and (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin responsive-sm{
+    @media screen and (max-width: 1400px) {
+        @content;
+    }
+}
+
+
+
+header{
+    .navbar-wrapper{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        color: #333333;
+
+        .navbar-logo-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+            }
+        
+        }
+        .nav-list-wrapper{
+            .nav-list{
+                display: flex;
+                gap: 48px;
+                align-items: center;
+
+                @include responsive-xl{
+                    gap: 30px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: #333333;
+                    font-weight: 500;
+                }
+                a li{
+                    list-style-type: none;
+
+                }
+                .nav-list-item{
+                    border: 1px solid #0E70AF;
+                    padding: 10px 15px 10px 15px;
+                    border-radius: 3px;
+                    background:linear-gradient(#647b64, #66ac66);
+                    color: #FEFEFE;
+                }
+            }
+        }
+    }
+    .header-content-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        .header-item-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url(./svg/Ellipse\ 116.svg);
+            background-repeat: no-repeat;
+            background-position-x: 150px;
+            background-position-y: 100px;
+
+            @include responsive-xxl{
+                background-position-y: 70px;
+            }
+
+            .header-content-name{
+                font-weight: 500;
+                font-size: 3rem;
+                line-height: 55.68px;
+                text-transform: uppercase;
+                color: #333333;
+                margin: 0;
+            }
+            .header-content-text{
+                font-size: 1.25rem;
+                line-height: 26.4px;
+                color: #4F4F4F;
+                margin-top: 24px;
+                margin-bottom: 32px;
+            }
+
+        }
+        .header-item-right{
+            text-align: center;
+
+            .header-image{
+                max-width: 100%;
+                padding-inline: 40px;
+                background-image: url(./svg/Ellipse\ 118.svg);
+                background-repeat: no-repeat;
+                background-position-y: 100px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
