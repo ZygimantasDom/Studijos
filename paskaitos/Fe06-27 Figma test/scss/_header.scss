@@ -30,6 +30,12 @@
     }
 }
 
+@mixin responsive-xsm{
+    @media screen and (max-width: 599px) {
+        @content;
+    }
+}
+
 
 
 header{
@@ -66,16 +72,29 @@ header{
                         font-size: 0.875rem;
                     }
                 }
+
+
                 a li{
                     list-style-type: none;
 
+                    @include responsive-xsm{
+                        display: none;
+                    }
                 }
+
+                a li:hover{
+                    color: #66ac66;
+                }
+
                 .nav-list-item{
                     border: 1px solid #0E70AF;
                     padding: 10px 15px 10px 15px;
                     border-radius: 3px;
                     background:linear-gradient(#647b64, #66ac66);
                     color: #FEFEFE;
+                }
+                .nav-list-item:hover{
+                    color: #14dc14;
                 }
             }
         }
@@ -127,6 +146,15 @@ header{
                 @include responsive-sm{
                     font-size: 0.9rem;
                     line-height: 20.2px;
+                }
+            }
+            .green-btn{
+                width: 350px;
+                @include responsive-md{
+                    width: 250px;
+                }
+                @include responsive-xsm{
+                    width: 190px;
                 }
             }
 

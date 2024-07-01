@@ -55,13 +55,21 @@ main{
                 align-items: center;
                 margin:0 auto;
 
-                .green-btn{
-                    align-self: center;
-                }
+                
                 p.main-item-text{
                     margin: 0 6.25em;
                     padding-bottom: 1em;
                     text-align: center;
+                }
+                .green-btn{
+                    align-self: center;
+
+                    @include responsive-lg{
+                        width: 350px;
+                    }
+                    @include responsive-xsm{
+                        width: 190px;
+                    }
                 }
                 .svg{
                     display: none;
@@ -92,7 +100,8 @@ main{
 
             .right-item-card{
                 padding: 20px;
-
+                border-radius: 10px;
+                transition: ease-in-out 0.2s;
 
                 .card-logo-wrapper{
                     
@@ -117,6 +126,15 @@ main{
                     line-height: 17.17px;
                     font-weight: 400;
                 }
+            }
+            .right-item-card:hover{
+                border: 1px solid #66ac66;
+                -webkit-box-shadow: 16px 13px 18px -8px rgba(102,172,102,1);
+                -moz-box-shadow: 16px 13px 18px -8px rgba(102,172,102,1);
+                box-shadow: 16px 13px 18px -8px rgba(102,172,102,1);
+                background:linear-gradient(#647b64, #66ac66);
+                color: whitesmoke;
+                
             }
         }
     }
@@ -162,6 +180,7 @@ main{
                 padding: 78px 45px 72px;
                 border-radius: 8px;
                 box-shadow: 1px 1px 5px #d4d3d3;
+                cursor: pointer;
                 
                 .main-content-mid-logo{
                     padding-bottom: 5.5px;
@@ -180,6 +199,7 @@ main{
 
                 }
             }
+
             .rectangle-right{
                 position: absolute;
                 z-index: -1;
@@ -209,25 +229,15 @@ main{
                         -moz-box-shadow: 10px 10px 5px 0px rgba(219,219,219,1);
                         box-shadow: 10px 10px 5px 0px rgba(219,219,219,1);
                     }
-
+                    
                     .bot-img-shadow{
                         display: none;
                     }
 
-                    .content-item-all{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
                     }
-                    .green-btn{
-                        align-self: center;
-                    }
+                    
                 }
-            }
-            .main-content-bot-img{
-                display: block;
-            }
+
             .bot-img-shadow{
                 position: absolute;
                 top: 30px;
@@ -237,7 +247,13 @@ main{
             .content-item-all{
                 padding: 105px 50px 105px 105px;
                 @include responsive-md{
-                    padding: 40px 10px;
+                padding: 40px 10px;
+                }
+                .all-items-yellow-text{
+                    font-size: 16px;
+                }
+                .all-items-header{
+                    font-size: 1.7rem;
                 }
                 .main-item-text{
                     font-size: 1rem;
@@ -246,6 +262,12 @@ main{
                     color: #4F4F4F;
                     margin-bottom: 40px;
                     margin-top: 0;
+                }
+                .green-btn{
+                    width: 300px;
+                    @include responsive-xsm{
+                        width: 250px;
+                    }
                 }
             }
         }
@@ -266,7 +288,6 @@ main{
                     display: none;
                 }
                     img.arrow-svg-left, .arrow-svg-right {
-
                         padding: 15px;
                         border-radius: 50%;
                         background: linear-gradient(0deg, #FFFFFF, #FFFFFF),

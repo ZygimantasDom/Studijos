@@ -28,6 +28,11 @@
     }
 }
 
+@mixin responsive-xsm{
+    @media screen and (max-width: 599px) {
+        @content;
+    }
+}
 
 
 footer{
@@ -133,6 +138,11 @@ footer{
                 padding: 15px;
                 @include responsive-lg{
                     width: 70%;
+                }
+            }
+            .green-btn{
+                @include responsive-xsm{
+                    width: 300px;
                 }
             }
         }
